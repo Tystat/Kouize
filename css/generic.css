@@ -1,0 +1,50 @@
+body{
+  background-image: url(/media/FreeLP.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bodygame{
+	background-image: url('/media/tmpjeu/plateauER+.png');
+}
+
+.wmax-1024 { max-width: 1024px; }
+.wmax-800 { max-width: 800px; }
+.wmax-600 { max-width: 600px; }
+.wmin-200 { min-width: 200px; }
+
+.vh-100{ min-height: 100vh; }
+.vh-80{ min-height: 80vh; }
+.vh-50{ min-height: 50vh; }
+
+.scroll-110pxy {
+  max-height:110px;
+  overflow-y: auto;
+}
+
+.scroll-220pxy {
+  max-height:220px;
+  overflow-y: auto;
+}
+
+.scroll-350pxy {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+
+.scroll-450pxy {
+  max-height:450px;
+  overflow-y: auto;
+}
+
+.scroll-575pxy {
+  max-height: 575px;
+  overflow-y: auto;
+}
+
+.mess {
+  background: none;
+  color:#ff0000;
+}

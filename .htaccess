@@ -1,0 +1,14 @@
+RewriteOptions inherit
+ErrorDocument 404 /404page.html
+ErrorDocument 403 /
+
+RewriteEngine On 
+
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.kouize.com/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^kouize\.fr$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.kouize\.fr$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ "https\:\/\/www\.kouize\.com\/$1" [R=301,L]
